@@ -1,0 +1,25 @@
+﻿<Window x:Class="ExamWork.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExamWork"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="numberTextBox" HorizontalAlignment="Left" Height="23" Margin="82,78,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="operationButton" Content="Start operation" HorizontalAlignment="Left" Margin="100,144,0,0" VerticalAlignment="Top" Width="102" Click="OperationButtonClick"/>
+        <TextBox x:Name="categoryTextBox" HorizontalAlignment="Left" Height="23" Margin="486,99,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="nameProductTextBox" HorizontalAlignment="Left" Height="23" Margin="486,146,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="priceTextBox" HorizontalAlignment="Left" Height="23" Margin="486,254,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.686,0.615"/>
+        <TextBlock HorizontalAlignment="Left" Margin="348,99,0,0" TextWrapping="Wrap" Text="Категория товара: " VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="348,146,0,0" TextWrapping="Wrap" Text="Название: " VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="348,254,0,0" TextWrapping="Wrap" Text="Цена($):" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="348,201,0,0" TextWrapping="Wrap" Text="Дата выпуска: " VerticalAlignment="Top"/>
+        <Button x:Name="loadToDataBaseButton" Content="Сохранить" HorizontalAlignment="Left" Margin="506,333,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.741,0.774" Click="LoadToDataBaseButtonClick"/>
+        <TextBox x:Name="countryOriginTextBox" HorizontalAlignment="Left" Height="23" Margin="486,294,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.686,0.615"/>
+        <TextBlock HorizontalAlignment="Left" Margin="348,294,0,0" TextWrapping="Wrap" Text="Страна производства:" VerticalAlignment="Top"/>
+        <DatePicker x:Name="datePicker" HorizontalAlignment="Left" Margin="486,200,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
